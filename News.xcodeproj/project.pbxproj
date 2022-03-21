@@ -13,6 +13,8 @@
 		443B606D27E86BD8009C6390 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 443B606B27E86BD8009C6390 /* Main.storyboard */; };
 		443B606F27E86BDE009C6390 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 443B606E27E86BDE009C6390 /* Assets.xcassets */; };
 		443B607227E86BDE009C6390 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 443B607027E86BDE009C6390 /* LaunchScreen.storyboard */; };
+		443B607E27E8709E009C6390 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B607D27E8709E009C6390 /* APICaller.swift */; };
+		443B608127E8736D009C6390 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B608027E8736D009C6390 /* APIResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		443B606E27E86BDE009C6390 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		443B607127E86BDE009C6390 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		443B607327E86BDE009C6390 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		443B607D27E8709E009C6390 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		443B608027E8736D009C6390 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +60,11 @@
 		443B606427E86BD8009C6390 /* News */ = {
 			isa = PBXGroup;
 			children = (
-				443B607927E86C72009C6390 /* SupportFiles */,
+				443B607C27E87080009C6390 /* New Group */,
+				443B607F27E87336009C6390 /* Model */,
 				443B607A27E86CDC009C6390 /* Controller */,
 				443B607B27E86CFE009C6390 /* View */,
+				443B607927E86C72009C6390 /* SupportFiles */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -89,6 +95,22 @@
 				443B607027E86BDE009C6390 /* LaunchScreen.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		443B607C27E87080009C6390 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				443B607D27E8709E009C6390 /* APICaller.swift */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		443B607F27E87336009C6390 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				443B608027E8736D009C6390 /* APIResponse.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +187,8 @@
 				443B606A27E86BD8009C6390 /* ViewController.swift in Sources */,
 				443B606627E86BD8009C6390 /* AppDelegate.swift in Sources */,
 				443B606827E86BD8009C6390 /* SceneDelegate.swift in Sources */,
+				443B608127E8736D009C6390 /* APIResponse.swift in Sources */,
+				443B607E27E8709E009C6390 /* APICaller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
