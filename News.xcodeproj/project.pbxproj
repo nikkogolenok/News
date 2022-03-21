@@ -15,6 +15,9 @@
 		443B607227E86BDE009C6390 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 443B607027E86BDE009C6390 /* LaunchScreen.storyboard */; };
 		443B607E27E8709E009C6390 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B607D27E8709E009C6390 /* APICaller.swift */; };
 		443B608127E8736D009C6390 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B608027E8736D009C6390 /* APIResponse.swift */; };
+		443B608427E87E49009C6390 /* ViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B608327E87E49009C6390 /* ViewController+Ext.swift */; };
+		443B608727E88126009C6390 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B608627E88126009C6390 /* NewsTableViewCell.swift */; };
+		443B608927E8B823009C6390 /* NewsTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B608827E8B823009C6390 /* NewsTableViewCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		443B607327E86BDE009C6390 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		443B607D27E8709E009C6390 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		443B608027E8736D009C6390 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		443B608327E87E49009C6390 /* ViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Ext.swift"; sourceTree = "<group>"; };
+		443B608627E88126009C6390 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		443B608827E8B823009C6390 /* NewsTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +66,11 @@
 		443B606427E86BD8009C6390 /* News */ = {
 			isa = PBXGroup;
 			children = (
-				443B607C27E87080009C6390 /* New Group */,
+				443B608227E87E21009C6390 /* Extension */,
+				443B607C27E87080009C6390 /* Network */,
 				443B607F27E87336009C6390 /* Model */,
 				443B607A27E86CDC009C6390 /* Controller */,
+				443B608527E880F9009C6390 /* Cell */,
 				443B607B27E86CFE009C6390 /* View */,
 				443B607927E86C72009C6390 /* SupportFiles */,
 			);
@@ -97,20 +105,37 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		443B607C27E87080009C6390 /* New Group */ = {
+		443B607C27E87080009C6390 /* Network */ = {
 			isa = PBXGroup;
 			children = (
 				443B607D27E8709E009C6390 /* APICaller.swift */,
 			);
-			path = "New Group";
+			path = Network;
 			sourceTree = "<group>";
 		};
 		443B607F27E87336009C6390 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				443B608027E8736D009C6390 /* APIResponse.swift */,
+				443B608827E8B823009C6390 /* NewsTableViewCellViewModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		443B608227E87E21009C6390 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				443B608327E87E49009C6390 /* ViewController+Ext.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		443B608527E880F9009C6390 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				443B608627E88126009C6390 /* NewsTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,9 +210,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				443B606A27E86BD8009C6390 /* ViewController.swift in Sources */,
+				443B608727E88126009C6390 /* NewsTableViewCell.swift in Sources */,
 				443B606627E86BD8009C6390 /* AppDelegate.swift in Sources */,
+				443B608427E87E49009C6390 /* ViewController+Ext.swift in Sources */,
 				443B606827E86BD8009C6390 /* SceneDelegate.swift in Sources */,
 				443B608127E8736D009C6390 /* APIResponse.swift in Sources */,
+				443B608927E8B823009C6390 /* NewsTableViewCellViewModel.swift in Sources */,
 				443B607E27E8709E009C6390 /* APICaller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
